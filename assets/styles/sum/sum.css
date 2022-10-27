@@ -1,0 +1,33 @@
+.sum {
+  margin: 0 -30px;
+  padding: 25px 45px;
+  font-size: 20px;
+  line-height: 24px;
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.sum__title {
+  margin: 0 0 20px 0;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 53px;
+}
+
+.sum__list {
+  margin: 0 0 30px 0;
+}
+
+.sum__item {
+  margin: 0 0 10px 0;
+  padding: 0 0 0 22px;
+}
+
+.sum__item:last-child, .sum__item:last-of-type {
+  margin: 0;
+}
+
+.sum__item::before {
+  content: '—';
+  margin: 0 5px 0 0;
+}
