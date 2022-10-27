@@ -24,14 +24,16 @@
       <p class="section__text">Как это часто бывает, знание базовых принципов поможет проявить гибкость и выйти за их пределы. Эти знания особенно важны для начинающих, но также будут полезным напоминанием и для более опытных верстальщиков. Итак, поговорим о фундаментальных основах работы с отступами в вёрстке.</p>
     </div>
 
-    <nav class="navigation">
-      <p class="navigation__title">Содержание:</p>
-      <ol class="navigation__list">
-        <li class="navigation__item"><a class="navigation__link" href="#rule-1">Отступ задается от предыдущего элемента к следующему</a></li>
-        <li class="navigation__item"><a class="navigation__link" href="#rule-2">Отступ задается последнему возможному элементу в DOM-дереве</a></li>
-        <li class="navigation__item"><a class="navigation__link" href="#rule-3">Для последнего элемента группы отступ обнуляется</a></li>
-      </ol>
-    </nav>
+    <div class="section-grey">
+      <p class="section-grey__title">Содержание:</p>
+      <nav class="section-grey__navigation">
+        <ol class="section-grey__navigation-list">
+          <li class="section-grey__item section-grey__item_colored"><a class="section-grey__link" href="#rule-1">Отступ задается от предыдущего элемента к следующему</a></li>
+          <li class="section-grey__item section-grey__item_colored"><a class="section-grey__link" href="#rule-2">Отступ задается последнему возможному элементу в DOM-дереве</a></li>
+          <li class="section-grey__item section-grey__item_colored"><a class="section-grey__link" href="#rule-3">Для последнего элемента группы отступ обнуляется</a></li>
+        </ol>
+      </nav>
+    </div>
   </header>
 
   <section class="section" id="rule-1">
@@ -47,10 +49,12 @@
     </div>
 
     <div class="section__block">
-      <img class="section__block-image section__block-image_float_right" src="assets/styles/section/img/rule-1/02.jpg" alt="Картинка с демонстрацией использования внутренних отступов">
+      <div class="section__text-block">
       <p class="section__text">Отступ внутри блока сверху или слева реализуется через <i>padding-top</i> и <i>padding-left</i> родителя.</p>
       <p class="section__text">Отступы, как правило, делают в направлении от предыдущего элемента к следующему. Так элемент не будет толкать сам себя.</p>
       <p class="section__text">Изначально элемент статичен, а его положение может меняться только под воздействием свойств других блоков или свойств родителя.</p>
+      </div>
+      <img class="section__block-image section__block-image_float_right" src="assets/styles/section/img/rule-1/02.jpg" alt="Картинка с демонстрацией использования внутренних отступов">
     </div>
 
   </section>
@@ -63,7 +67,7 @@
     <img class="section__image" src="assets/styles/section/img/rule-2/02.jpg" alt="Картинка с демонстрацией списка в браузере">
     <p class="section__text">Отступ делают за счёт соседних элементов, а не дочерних:</p>
     <figure class="section__figure">
-      <img class="section__image" src="assets/styles/section/img/rule-2/03.jpg" alt="Картинка с демонстрацией использования нижних внешних отступов">
+      <img class="section__figure-image" src="assets/styles/section/img/rule-2/03.jpg" alt="Картинка с демонстрацией использования нижних внешних отступов">
       <figcaption class="section__figcaption"><strong class="section__text section__text_style_uppercase">Важно</strong>: здесь <span class="section__text section__text_style_italic">.list-item</span> — последний возможный элемент в котором мы задаём отступ, чтобы разделить списки.</figcaption>
     </figure>
     <p class="section__text">Казалось бы, можно задать отступ параграфу <span class="section__text section__text_style_italic">&#60;p&#62;</span>, либо обёртке <span class="section__text section__text_style_italic">&#60;article&#62;</span> для достижения той же цели. Внешне останется все точно также, но так делать не рекомендуется.</p>
@@ -81,29 +85,29 @@
     <p class="section__text">Между рецептами расстояние одинаковое. Можно заметить, что и до следующего блока расстояние такое же.</p>
     <img class="section__image" src="assets/styles/section/img/rule-3/01.jpg" alt="Картинка с демонстрацией использования внутренних отступов">
     <p class="section__text">В соответствии со вторым принципом: последний <span class="article__text article__text_style_italic">margin</span> обнуляется, а нижний отступ задаётся через <span class="article__text article__text_style_italic">padding</span> для <span class="article__text article__text_style_italic">section</span>. Я чаще всего задаю <span class="article__text article__text_style_italic">padding</span> для секции с обоих сторон, если расстояние между секциями 100px задаю секциям <span class="article__text article__text_style_italic">padding-top:50px</span> и <span class="article__text article__text_style_italic">padding-bottom:50px</span></p>.
-    <img class="section__image" src="assets/styles/section/img/rule-3/02.jpg" alt="">
-    <img class="section__image" src="assets/styles/section/img/rule-3/03.jpg" alt="">
+    <img class="section__image" src="assets/styles/section/img/rule-3/02.jpg" alt="Картинка с демонстрацией использования внутренних отступов">
+    <img class="section__image" src="assets/styles/section/img/rule-3/03.jpg" alt="Картинка с демонстрацией использования внутренних отступов">
     <p class="section__text">Для большего понимания рассмотрим другой пример, который часто встречается на практике:</p>
-    <img class="section__image" src="assets/styles/section/img/rule-3/04.jpg" alt="">
-    <img class="section__image" src="assets/styles/section/img/rule-3/05.jpg" alt="">
+    <img class="section__image" src="assets/styles/section/img/rule-3/04.jpg" alt="Картинка с демонстрацией использования внутренних отступов">
+    <img class="section__image" src="assets/styles/section/img/rule-3/05.jpg" alt="Картинка с демонстрацией использования внутренних отступов">
     <p class="section__text">Здесь нас интересует отступ между пунктами меню и списком с кнопкой поиска. Отступы между пунктами меню задаются так:</p>
-    <img class="section__image" src="assets/styles/section/img/rule-3/06.jpg" alt="">
+    <img class="section__image" src="assets/styles/section/img/rule-3/06.jpg" alt="Картинка с демонстрацией использования внутренних отступов">
     <p class="section__text">Советую использовать псевдоклассы :last-child чаще других, например так:</p>
-    <img class="section__image" src="assets/styles/section/img/rule-3/07.jpg" alt="">
+    <img class="section__image" src="assets/styles/section/img/rule-3/07.jpg" alt="Картинка с демонстрацией использования внутренних отступов">
     
   </section>
 
-  <section class="sum">
-    <h2 class="sum__title">Подытожим:</h2>
-    <ul class="sum__list">
-      <li class="sum__item">отступы задаём от предыдущего элемента к следующему</li>
-      <li class="sum__item">используем только margin-right и margin-bottom</li>
-      <li class="sum__item">внешние отступы задаются только между соседями</li>
-      <li class="sum__item">внутренний отступ задаём самому верхнему элементу в дом дереве</li>
-      <li class="sum__item">последнему элементу группы отступ всегда обнуляем</li>
+  <div class="section-grey">
+    <p class="section-grey__title">Подытожим:</p>
+    <ul class="section-grey__list">
+      <li class="section-grey__item section-grey__item_with-marker">отступы задаём от предыдущего элемента к следующему</li>
+      <li class="section-grey__item section-grey__item_with-marker">используем только margin-right и margin-bottom</li>
+      <li class="section-grey__item section-grey__item_with-marker">внешние отступы задаются только между соседями</li>
+      <li class="section-grey__item section-grey__item_with-marker">внутренний отступ задаём самому верхнему элементу в дом дереве</li>
+      <li class="section-grey__item section-grey__item_with-marker">последнему элементу группы отступ всегда обнуляем</li>
     </ul>
-    <p class="sum__text">Конечно бывают исключения. Ведь макеты бывают различной сложности. Иногда базовые принципы приходится нарушать в угоду дизайнерского решения или простоты вёрстки. Но для этого эти принципы необходимо хорошо знать.</p>
-  </section>
+    <p class="section-grey__text">Конечно бывают исключения. Ведь макеты бывают различной сложности. Иногда базовые принципы приходится нарушать в угоду дизайнерского решения или простоты вёрстки. Но для этого эти принципы необходимо хорошо знать.</p>
+  </div>
 
 </article>
 
